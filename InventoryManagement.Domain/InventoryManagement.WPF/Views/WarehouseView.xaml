@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="InventoryManagement.WPF.Views.WarehouseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Add new warehouse" FontWeight="SemiBold" FontSize="16" Padding="10" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Text="Name:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <TextBox Text="{Binding WarehouseName}" x:Name="txtWarehouseName" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Add" Command="{Binding TryAddWarehouseCommand}" Width="110" Grid.Column="0" Margin="5"/>
+            <Button Content="Update" Command="{Binding TryUpdateWarehouseCommand}" Width="110" Grid.Column="1" Margin="5"/>
+            <Button Content="Delete" Command="{Binding TryDeleteWarehouseCommand}" Width="110" Grid.Column="2" Margin="5"/>
+            <Button Content="Show locations" Command="{Binding ShowLocationsCommand}" Width="110" Grid.Column="3" Margin="5"/>
+        </Grid>
+
+        <ListView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Warehouses}" SelectedItem="{Binding SelectedWarehouse}" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding SelectedWarehouseLocations}" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Location" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
+
+

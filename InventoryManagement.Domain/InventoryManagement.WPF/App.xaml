@@ -1,0 +1,34 @@
+﻿<Application x:Class="InventoryManagement.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:InventoryManagement.WPF"
+             xmlns:views="clr-namespace:InventoryManagement.WPF.Views"
+             xmlns:vm="clr-namespace:InventoryManagement.WPF.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:ProductViewModel}">
+            <views:ProductView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:WarehouseViewModel}">
+            <views:WarehouseView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:WarehouseLocationViewModel}">
+            <views:WarehouseLocationView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:CompanySupplierViewModel}">
+            <views:CompanySupplierView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:PersonSupplierViewModel}">
+            <views:PersonSupplierView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:WarehouseProductViewModel}">
+            <views:WarehouseProductView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:OrderItemViewModel}">
+            <views:OrderItemView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:OrderViewModel}">
+            <views:OrderView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>

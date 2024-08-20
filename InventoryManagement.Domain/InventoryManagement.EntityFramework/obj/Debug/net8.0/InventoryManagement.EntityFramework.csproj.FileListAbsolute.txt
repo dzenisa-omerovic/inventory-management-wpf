@@ -1,0 +1,17 @@
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.EntityFramework.deps.json
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.EntityFramework.runtimeconfig.json
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.EntityFramework.dll
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.EntityFramework.pdb
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.Domain.dll
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\bin\Debug\net8.0\InventoryManagement.Domain.pdb
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.csproj.AssemblyReference.cache
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.AssemblyInfoInputs.cache
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.AssemblyInfo.cs
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\Inventor.239D43EB.Up2Date
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.dll
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\refint\InventoryManagement.EntityFramework.dll
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.pdb
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\InventoryManagement.EntityFramework.genruntimeconfig.cache
+C:\Users\PC Ome\source\repos\InventoryManagement.Domain\InventoryManagement.EntityFramework\obj\Debug\net8.0\ref\InventoryManagement.EntityFramework.dll

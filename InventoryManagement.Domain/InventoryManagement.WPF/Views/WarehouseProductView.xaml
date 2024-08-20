@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="InventoryManagement.WPF.Views.WarehouseProductView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Add new warehouse product" FontWeight="SemiBold" FontSize="16" Padding="10" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Text="Quantity:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <TextBox Text="{Binding WarehouseProductQuantity}" x:Name="txtWarehouseProductQuantity" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+
+        <TextBlock Text="Warehouse location:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <ComboBox ItemsSource="{Binding WarehouseLocations}" SelectedItem="{Binding SelectedWarehouseLocation}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text=" (" />
+                        <TextBlock Text="{Binding Warehouse.Name}" />
+                        <TextBlock Text=")" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock Text="Product:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <ComboBox ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" DisplayMemberPath="Name" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+        
+        <TextBlock Text="Supplier:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <ComboBox ItemsSource="{Binding Suppliers}" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="DisplayName" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Button Content="Add" Command="{Binding TryAddWarehouseProductCommand}" Width="100" Margin="5"/>
+            <Button Content="Update" Command="{Binding TryUpdateWarehouseProductCommand}" Width="100" Margin="5"/>
+            <Button Content="Delete" Command="{Binding TryDeleteWarehouseProductCommand}" Width="100" Margin="5"/>
+        </StackPanel>
+        <ListView ItemsSource="{Binding WarehouseProducts}" SelectedItem="{Binding SelectedWarehouseProduct}" Grid.Row="6" Grid.ColumnSpan="3" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="100"/>
+                    <GridViewColumn Header="Warehouse location" DisplayMemberBinding="{Binding WarehouseLocation.Name}" Width="150"/>
+                    <GridViewColumn Header="Warehouse" DisplayMemberBinding="{Binding WarehouseLocation.Warehouse.Name}" Width="150"/>
+                    <GridViewColumn Header="Product" DisplayMemberBinding="{Binding Product.Name}" Width="100"/>
+                    <GridViewColumn Header="Supplier" DisplayMemberBinding="{Binding Supplier.DisplayName}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>
+

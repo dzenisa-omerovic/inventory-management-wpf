@@ -1,0 +1,676 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94B33C-FCB1-4707-907C-DC5320579C86}|InventoryManagement.EntityFramework\\InventoryManagement.EntityFramework.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.entityframework\\database\\inventorymanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94B33C-FCB1-4707-907C-DC5320579C86}|InventoryManagement.EntityFramework\\InventoryManagement.EntityFramework.csproj|solutionrelative:inventorymanagement.entityframework\\database\\inventorymanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\orderview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\orderview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\warehouseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\warehouseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\warehouseproductview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\warehouseproductview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.wpf\\views\\warehouselocationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\warehouselocationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\warehouselocationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\warehouselocationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.wpf\\views\\productview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\productview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.wpf\\views\\personsupplierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\personsupplierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\orderitemview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\orderitemview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.wpf\\views\\companysupplierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\companysupplierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\warehouselocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\warehouselocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\warehouseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\warehouseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\warehouseproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\warehouseproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|c:\\users\\pc ome\\source\\repos\\inventorymanagement.domain\\inventorymanagement.wpf\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\supplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\supplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\personsupplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\personsupplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\orderitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\orderitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\companysupplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\companysupplierviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\warehouseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\warehouseproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\warehouselocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\warehouselocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\warehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\personsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\personsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\companysupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\companysupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Suppliers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.WarehouseLocations.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.WarehouseProducts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Warehouses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEAEE237-60C7-474C-8BFE-32FEC0630892}|InventoryManagement.Domain\\InventoryManagement.Domain.csproj|solutionrelative:inventorymanagement.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\inventorymanagement.wpf\\views\\orderview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92AF177-9F89-48CC-A105-A1BD5AB26903}|InventoryManagement.WPF\\InventoryManagement.WPF.csproj|solutionrelative:inventorymanagement.wpf\\views\\orderview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC Ome\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 355,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\OrderView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\OrderView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T20:40:01.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\OrderViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\OrderViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\OrderViewModel.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAYwI8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T20:21:20.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WarehouseView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\WarehouseView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\WarehouseView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-16T14:24:46.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WarehouseProductView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseProductView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\WarehouseProductView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseProductView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\WarehouseProductView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T08:11:24.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\App.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\App.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\App.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T09:28:34.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryManagementDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.EntityFramework\\Database\\InventoryManagementDbContext.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.EntityFramework\\Database\\InventoryManagementDbContext.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.EntityFramework\\Database\\InventoryManagementDbContext.cs",
+              "RelativeToolTip": "InventoryManagement.EntityFramework\\Database\\InventoryManagementDbContext.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAwwBcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:45:29.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240820101800_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs",
+              "RelativeToolTip": "InventoryManagement.EntityFramework\\Migrations\\20240820101800_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T10:18:01.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\MainWindow.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T09:28:52.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Order.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:01:50.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WarehouseLocationView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T10:03:21.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\ProductView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\ProductView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\ProductView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\ProductView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T10:02:51.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PersonSupplierView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\PersonSupplierView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\PersonSupplierView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\PersonSupplierView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\PersonSupplierView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T10:02:20.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CompanySupplierView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\CompanySupplierView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\CompanySupplierView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\CompanySupplierView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\CompanySupplierView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T10:01:02.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAADgv8gAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T14:59:00.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WarehouseLocationView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\WarehouseLocationView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-12T15:11:13.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T10:00:33.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderItemView.xaml",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderItemView.xaml",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\OrderItemView.xaml",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderItemView.xaml",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\OrderItemView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-15T19:51:34.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PersonSupplierViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\PersonSupplierViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\PersonSupplierViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\PersonSupplierViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\PersonSupplierViewModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAM4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:57:21.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CompanySupplier.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\CompanySupplier.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\CompanySupplier.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\CompanySupplier.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\CompanySupplier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:01:48.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs [Read Only]",
+              "ViewState": "AQIAAKIBAAAAAAAAAADgv7UBAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:30:32.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderView.xaml.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Views\\OrderView.xaml.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Views\\OrderView.xaml.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\Views\\OrderView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T21:00:31.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WarehouseLocationViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseLocationViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\WarehouseLocationViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseLocationViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\WarehouseLocationViewModel.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAQwNAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:11:27.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WarehouseProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseProductViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\WarehouseProductViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseProductViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\WarehouseProductViewModel.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAYwIkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:25:09.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WarehouseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\WarehouseViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\WarehouseViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\WarehouseViewModel.cs",
+              "ViewState": "AQIAAKoAAAAAAAAAAIA8wLQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T13:15:07.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\OrderItemViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\OrderItemViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\OrderItemViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\OrderItemViewModel.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAuwHwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:38:39.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAkwCIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T20:47:22.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CompanySupplierViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\CompanySupplierViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\CompanySupplierViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\CompanySupplierViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\CompanySupplierViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:53:03.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SupplierViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\SupplierViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\ViewModels\\SupplierViewModel.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\ViewModels\\SupplierViewModel.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\ViewModels\\SupplierViewModel.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAxwCQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:53:13.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.WPF\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.WPF\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "InventoryManagement.WPF\\Commands\\RelayCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:52:58.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WarehouseProduct.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\WarehouseProduct.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\WarehouseProduct.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\WarehouseProduct.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\WarehouseProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:39:28.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WarehouseLocation.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\WarehouseLocation.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\WarehouseLocation.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\WarehouseLocation.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\WarehouseLocation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:04:25.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Warehouse.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Warehouse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\Warehouse.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Warehouse.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\Warehouse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:02:19.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Product.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:04:20.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PersonSupplier.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\PersonSupplier.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\PersonSupplier.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\PersonSupplier.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\PersonSupplier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:01:49.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\OrderItem.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:02:04.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "dbo.WarehouseProducts [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.WarehouseProducts.sql",
+              "ToolTip": "dbo.WarehouseProducts [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-18T21:34:24.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-18T21:34:42.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "dbo.WarehouseLocations [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.WarehouseLocations.sql",
+              "ToolTip": "dbo.WarehouseLocations [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-18T21:34:32.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "dbo.Suppliers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Suppliers.sql",
+              "ToolTip": "dbo.Suppliers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-18T21:34:36.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "dbo.Warehouses [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_2MPDQD0_SQLEXPRESS/InventoryManagement/True/SqlTable/dbo.Warehouses.sql",
+              "ToolTip": "dbo.Warehouses [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-18T21:34:16.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "InventoryManagement.Domain\\Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\PC Ome\\source\\repos\\InventoryManagement.Domain\\InventoryManagement.Domain\\Models\\Supplier.cs",
+              "RelativeToolTip": "InventoryManagement.Domain\\Models\\Supplier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T15:04:22.046Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
