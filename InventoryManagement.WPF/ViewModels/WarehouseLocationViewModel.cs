@@ -98,9 +98,9 @@ namespace InventoryManagement.WPF.ViewModels
 
         private async Task LoadWarehouseLocationsAsync()
         {
-            var warehousesLocations = await _context.WarehouseLocations.Include(wl => wl.Warehouse).ToListAsync();
+            var warehouseLocations = await _context.WarehouseLocations.Include(wl => wl.Warehouse).ToListAsync();
             WarehouseLocations.Clear();
-            foreach (var warehouseLocation in warehousesLocations)
+            foreach (var warehouseLocation in warehouseLocations)
             {
                 WarehouseLocations.Add(warehouseLocation);
             }

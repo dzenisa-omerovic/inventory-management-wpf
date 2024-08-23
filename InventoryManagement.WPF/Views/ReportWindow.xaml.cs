@@ -1,4 +1,5 @@
-﻿using InventoryManagement.WPF.ViewModels;
+﻿using InventoryManagement.Domain.Models;
+using InventoryManagement.WPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,20 +12,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace InventoryManagement.WPF.Views
 {
     /// <summary>
-    /// Interaction logic for OrderView.xaml
+    /// Interaction logic for ReportWindow.xaml
     /// </summary>
-    public partial class OrderView : UserControl
+    public partial class ReportWindow : Window
     {
-        public OrderView()
+        public ReportWindow(WarehouseProduct warehouseProduct)
         {
             InitializeComponent();
+            DataContext = new ReportViewModel(warehouseProduct);
         }
-        
     }
 }

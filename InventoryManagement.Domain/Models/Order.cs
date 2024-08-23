@@ -14,5 +14,8 @@ namespace InventoryManagement.Domain.Models
         public Supplier Supplier { get; set; }
         public int SupplierId { get; set; }
         public IEnumerable<OrderItem> OrderItems { get; set; }
+        public string Status { get; set; }
+        
     }
+    
 }

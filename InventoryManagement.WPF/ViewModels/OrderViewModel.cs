@@ -10,43 +10,76 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
+using InventoryManagement.WPF.Views;
 namespace InventoryManagement.WPF.ViewModels
 {
     public class OrderViewModel : ViewModelBase
     {
+        
         private readonly InventoryManagementDbContext _context;
-        private Order _selectedOrder;
-        private string _orderName;
-        private Supplier _selectedSupplier;
+        public ICommand OpenAddOrderWindowCommand { get; }
+        public ICommand MarkAsArrivedCommand { get; }
+        public ICommand AddToWarehouseCommand { get; }
+        public ObservableCollection<Order> Orders { get; set; }
         private ObservableCollection<OrderItem> _selectedOrderItems;
-        public ICommand AddOrderCommand { get; }
-        public ICommand UpdateOrderCommand { get; }
-        public ICommand DeleteOrderCommand { get; }
-        public ICommand TryAddOrderCommand { get; }
-        public ICommand TryUpdateOrderCommand { get; }
-        public ICommand TryDeleteOrderCommand { get; }
-        public ICommand ShowOrderItemsCommand { get; }
-        public ObservableCollection<Order> Orders { get; set; } = new ObservableCollection<Order>();
-        private ObservableCollection<Supplier> _suppliers { get; set; }
-
+        private Order _selectedOrder;
+        private decimal _selectedOrderTotalPrice;
         public OrderViewModel()
         {
             _context = new InventoryManagementDbContext();
-            Load();
+            Orders = new ObservableCollection<Order>();
+            _selectedOrderItems = new ObservableCollection<OrderItem>();
+            LoadOrders();
 
-            AddOrderCommand = new RelayCommand(async () => await AddOrderAsync(), CanAddOrder);
-            UpdateOrderCommand = new RelayCommand(async () => await UpdateOrderAsync(), CanUpdateOrder);
-            DeleteOrderCommand = new RelayCommand(async () => await DeleteOrderAsync(), CanDeleteOrder);
+            OpenAddOrderWindowCommand = new RelayCommand(OpenAddOrderWindow);
+            MarkAsArrivedCommand = new RelayCommand(MarkAsArrived);
+            AddToWarehouseCommand = new RelayCommand(OpenAddToWarehouseWindow);
 
-            TryAddOrderCommand = new RelayCommand(async () => await TryAddOrderAsync());
-            TryUpdateOrderCommand = new RelayCommand(async () => await TryUpdateOrderAsync());
-            TryDeleteOrderCommand = new RelayCommand(async () => await TryDeleteOrderAsync());
-            ShowOrderItemsCommand = new RelayCommand(async () => await ShowOrderItemsAsync());
         }
-
-        public async void Load()
+        private void OpenAddToWarehouseWindow()
         {
-            await LoadOrdersAsync();
+            if (SelectedOrder == null)
+            {
+                MessageBox.Show("Please select an order to add to warehouse.", "No Order Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (SelectedOrder.Status != "Arrived")
+            {
+                MessageBox.Show("The selected order has not been marked as 'Arrived'. Please mark it as arrived before adding it to the warehouse.", "Order Not Arrived", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (SelectedOrder.Status == "Added to warehouse")
+            {
+                MessageBox.Show("The selected order is already added to the warehouse.", "Order Added", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            var addToWarehouseWindow = new AddToWarehouseWindow();
+            var addToWarehouseViewModel = new AddToWarehouseViewModel(SelectedOrder, _context);
+            addToWarehouseViewModel.OnOrderAdded += RefreshOrders;
+
+            addToWarehouseWindow.DataContext = addToWarehouseViewModel;
+            addToWarehouseWindow.ShowDialog();
+            
+            addToWarehouseViewModel.OnOrderAdded -= RefreshOrders;
+
+        }
+        private void MarkAsArrived()
+        {
+            if (SelectedOrder == null)
+            {
+                MessageBox.Show("Please select an order to mark as arrived.", "No Order Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (SelectedOrder.Status == "Added to warehouse")
+            {
+                MessageBox.Show("The selected order is already added to the warehouse.", "Order Added", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            SelectedOrder.Status = "Arrived";
+            _context.SaveChanges();
+            RefreshOrders();
+
         }
         public ObservableCollection<OrderItem> SelectedOrderItems
         {
@@ -57,194 +90,69 @@ namespace InventoryManagement.WPF.ViewModels
                 OnPropertyChanged(nameof(SelectedOrderItems));
             }
         }
-
+        
         public Order SelectedOrder
         {
             get => _selectedOrder;
             set
             {
                 _selectedOrder = value;
-                if (_selectedOrder != null)
-                {
-                    OrderName = _selectedOrder.Name;
-                    SelectedSupplier = _selectedOrder.Supplier;
-                }
                 OnPropertyChanged(nameof(SelectedOrder));
-                ((RelayCommand)UpdateOrderCommand).RaiseCanExecuteChanged();
-                ((RelayCommand)DeleteOrderCommand).RaiseCanExecuteChanged();
-                ((RelayCommand)ShowOrderItemsCommand).RaiseCanExecuteChanged();
-                OnPropertyChanged(nameof(IsUpdateEnabled));
+                OnSelectedOrderChanged();
             }
         }
-        private async Task ShowOrderItemsAsync()
+
+        public decimal SelectedOrderTotalPrice
         {
-            if (SelectedOrder == null)
-            {
-                MessageBox.Show("Please select an order to view its order items.", "No Order Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            var orderItems = await _context.OrderItems.Where(oi => oi.OrderId == SelectedOrder.Id).Include(oi => oi.Product).Include(oi => oi.Order).ToListAsync();
-
-            if (orderItems.Count == 0)
-            {
-                MessageBox.Show("The selected order has no order items.", "No Order Items Found", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-
-            SelectedOrderItems = new ObservableCollection<OrderItem>(orderItems);
-        }
-
-        public string OrderName
-        {
-            get => _orderName;
+            get => _selectedOrderTotalPrice;
             set
             {
-                _orderName = value;
-                OnPropertyChanged(nameof(OrderName));
-                ((RelayCommand)AddOrderCommand).RaiseCanExecuteChanged();
-                ((RelayCommand)UpdateOrderCommand).RaiseCanExecuteChanged();
+                _selectedOrderTotalPrice = value;
+                OnPropertyChanged(nameof(SelectedOrderTotalPrice));
             }
         }
-
-        public Supplier SelectedSupplier
+        private void OnSelectedOrderChanged()
         {
-            get => _selectedSupplier;
-            set
+            if (SelectedOrder != null)
             {
-                _selectedSupplier = value;
-                OnPropertyChanged(nameof(SelectedSupplier));
+                SelectedOrderItems.Clear();
+                foreach (var item in SelectedOrder.OrderItems)
+                {
+                    SelectedOrderItems.Add(item);
+                }
+
+                SelectedOrderTotalPrice = SelectedOrderItems.Sum(item => item.Quantity * (item.Product?.Price ?? 0));
             }
         }
-        
-        public bool IsUpdateEnabled => SelectedOrder != null;
-
-        private async Task LoadOrdersAsync()
+        private void LoadOrders()
         {
-            var orders = await _context.Orders.Include(o => o.Supplier).ToListAsync();
+            var orders = _context.Orders.Include(o => o.OrderItems).ThenInclude(oi => oi.Product).Include(o => o.Supplier).ToList();
             Orders.Clear();
             foreach (var order in orders)
             {
                 Orders.Add(order);
             }
         }
-        public ObservableCollection<Supplier> Suppliers
+
+        private void OpenAddOrderWindow()
         {
-            get
-            {
-                var suppliers = _context.Suppliers.ToList();
-                return new ObservableCollection<Supplier>(suppliers);
-            }
+            var addOrderWindow = new AddOrderWindow();
+            var addOrderViewModel = new AddOrderViewModel();
+
+
+            addOrderViewModel.OnOrderSaved += RefreshOrders;
+
+            addOrderWindow.DataContext = addOrderViewModel;
+            addOrderWindow.ShowDialog();
+
+            addOrderViewModel.OnOrderSaved -= RefreshOrders;
         }
 
-        private bool CanAddOrder()
+        private void RefreshOrders()
         {
-            return !string.IsNullOrWhiteSpace(OrderName) && SelectedSupplier != null;
+            LoadOrders();
         }
-
-        private async Task AddOrderAsync()
-        {
-            if (Orders.Any(p => p.Name == OrderName))
-            {
-                MessageBox.Show("An order with the same name already exists.", "Duplicate Order", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            var order = new Order
-            {
-                Name = OrderName,
-                Date = DateTime.Now,
-                SupplierId = SelectedSupplier.Id
-            };
-
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
-            Orders.Add(order);
-
-            OrderName = string.Empty;
-            MessageBox.Show("Order added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private async Task TryAddOrderAsync()
-        {
-            if (!CanAddOrder())
-            {
-                MessageBox.Show("You can't add order. Check if the order name is empty or a supplier is selected.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            await AddOrderAsync();
-        }
-
-        private bool CanUpdateOrder()
-        {
-            return SelectedOrder != null;
-        }
-
-        private async Task UpdateOrderAsync()
-        {
-            if (SelectedOrder == null)
-            {
-                return;
-            }
-
-            if (MessageBox.Show("Are you sure that you want to update this order?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
-            {
-                return;
-            }
-
-            SelectedOrder.Name = OrderName;
-            SelectedOrder.SupplierId = SelectedSupplier.Id;
-
-            _context.Orders.Update(SelectedOrder);
-            await _context.SaveChangesAsync();
-            await LoadOrdersAsync();
-            MessageBox.Show("Order updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private async Task TryUpdateOrderAsync()
-        {
-            if (!CanUpdateOrder())
-            {
-                MessageBox.Show("You can't update order. Check if the order is selected from the list.", "No Order Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            await UpdateOrderAsync();
-        }
-
-        private bool CanDeleteOrder()
-        {
-            return SelectedOrder != null;
-        }
-
-        private async Task DeleteOrderAsync()
-        {
-            if (SelectedOrder == null)
-            {
-                return;
-            }
-
-            if (MessageBox.Show("Are you sure you want to delete this order?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
-            {
-                return;
-            }
-
-            _context.Orders.Remove(SelectedOrder);
-            await _context.SaveChangesAsync();
-            Orders.Remove(SelectedOrder);
-
-            OrderName = string.Empty;
-            MessageBox.Show("Order deleted successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private async Task TryDeleteOrderAsync()
-        {
-            if (!CanDeleteOrder())
-            {
-                MessageBox.Show("You can't delete order. Check if the order is selected from the list.", "No Order Selected", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            await DeleteOrderAsync();
-        }
+        
     }
+
 }

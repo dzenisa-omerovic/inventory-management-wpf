@@ -24,11 +24,14 @@
         <DataTemplate DataType="{x:Type vm:WarehouseProductViewModel}">
             <views:WarehouseProductView />
         </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:OrderItemViewModel}">
-            <views:OrderItemView />
+        <DataTemplate DataType="{x:Type vm:AddOrderViewModel}">
+            <views:AddOrderWindow />
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:OrderViewModel}">
             <views:OrderView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AddToWarehouseViewModel}">
+            <views:AddToWarehouseWindow />
         </DataTemplate>
     </Application.Resources>
 </Application>

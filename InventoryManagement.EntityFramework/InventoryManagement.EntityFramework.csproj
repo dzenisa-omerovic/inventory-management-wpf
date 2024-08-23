@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <ProjectReference Include="..\InventoryManagement.Domain\InventoryManagement.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InventoryManagement.Domain\InventoryManagement.Domain.csproj" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

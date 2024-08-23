@@ -25,12 +25,12 @@
         <TextBox Text="{Binding WarehouseLocationName}" x:Name="txtWarehouseLocationName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
 
         <TextBlock Text="Warehouse:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
-        <ComboBox ItemsSource="{Binding Warehouses}" SelectedItem="{Binding SelectedWarehouse}" DisplayMemberPath="Name" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+        <ComboBox Padding="5" ItemsSource="{Binding Warehouses}" SelectedItem="{Binding SelectedWarehouse}" DisplayMemberPath="Name" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
-            <Button Content="Add" Command="{Binding TryAddWarehouseLocationCommand}" Width="100" Margin="5"/>
-            <Button Content="Update" Command="{Binding TryUpdateWarehouseLocationCommand}" Width="100" Margin="5"/>
-            <Button Content="Delete" Command="{Binding TryDeleteWarehouseLocationCommand}" Width="100" Margin="5"/>
+            <Button Content="Add" Command="{Binding TryAddWarehouseLocationCommand}" Width="100" Margin="5" Padding="5"/>
+            <Button Content="Update" Command="{Binding TryUpdateWarehouseLocationCommand}" Width="100" Margin="5" Padding="5"/>
+            <Button Content="Delete" Command="{Binding TryDeleteWarehouseLocationCommand}" Width="100" Margin="5" Padding="5"/>
         </StackPanel>
 
         <ListView ItemsSource="{Binding WarehouseLocations}" SelectedItem="{Binding SelectedWarehouseLocation}" Grid.Row="4" Grid.ColumnSpan="3" Margin="5">

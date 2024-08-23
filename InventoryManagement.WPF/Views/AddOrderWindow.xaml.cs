@@ -11,20 +11,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace InventoryManagement.WPF.Views
 {
     /// <summary>
-    /// Interaction logic for OrderView.xaml
+    /// Interaction logic for AddOrderWindow.xaml
     /// </summary>
-    public partial class OrderView : UserControl
+    public partial class AddOrderWindow : Window
     {
-        public OrderView()
+        public AddOrderWindow()
         {
             InitializeComponent();
         }
-        
     }
 }

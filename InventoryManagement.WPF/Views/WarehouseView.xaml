@@ -31,12 +31,11 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Add" Command="{Binding TryAddWarehouseCommand}" Width="110" Grid.Column="0" Margin="5"/>
-            <Button Content="Update" Command="{Binding TryUpdateWarehouseCommand}" Width="110" Grid.Column="1" Margin="5"/>
-            <Button Content="Delete" Command="{Binding TryDeleteWarehouseCommand}" Width="110" Grid.Column="2" Margin="5"/>
-            <Button Content="Show locations" Command="{Binding ShowLocationsCommand}" Width="110" Grid.Column="3" Margin="5"/>
+            <Button Content="Add" Command="{Binding TryAddWarehouseCommand}" Width="110" Grid.Column="0" Margin="5" Padding="5"/>
+            <Button Content="Update" Command="{Binding TryUpdateWarehouseCommand}" Width="110" Grid.Column="1" Margin="5" Padding="5"/>
+            <Button Content="Delete" Command="{Binding TryDeleteWarehouseCommand}" Width="110" Grid.Column="2" Margin="5" Padding="5"/>
+            <Button Content="Show locations" Command="{Binding ShowLocationsCommand}" Width="110" Grid.Column="3" Margin="5" Padding="5"/>
         </Grid>
-
         <ListView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Warehouses}" SelectedItem="{Binding SelectedWarehouse}" Margin="5">
             <ListView.View>
                 <GridView>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="InventoryManagement.WPF.Views.AddToWarehouseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
+        mc:Ignorable="d"
+        Title="AddToWarehouseWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        
+
+        <TextBlock Text="Add seleceted order to warehouse" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="16" FontWeight="DemiBold" Margin="7,5"/>
+
+        <TextBlock Text="Warehouse location:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
+        <ComboBox Padding="5" ItemsSource="{Binding WarehouseLocations}" SelectedItem="{Binding SelectedWarehouseLocation}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text=" (" />
+                        <TextBlock Text="{Binding Warehouse.Name}" />
+                        <TextBlock Text=")" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <Button Content="Add to Warehouse" Command="{Binding AddToWarehouseCommand}" Grid.Row="2" Grid.Column="1" Margin="5" Padding="5" HorizontalAlignment="Right" Width="150"/>
+    </Grid>
+</Window>

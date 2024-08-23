@@ -1,0 +1,44 @@
+﻿<Window x:Class="InventoryManagement.WPF.Views.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="550" Width="950" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="3" Padding="40" Background="White" CornerRadius="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Warehouse Product Report" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20"/>
+
+                <TextBlock Text="Product:" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding ProductName}" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Grid.Row="1" Margin="0,0,20,10" Grid.Column="1" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Quantity:" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding Quantity}" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Warehouse Location:" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding WarehouseLocation}" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Warehouse:" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding Warehouse}" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Grid.Row="4" Margin="0,0,20,10" Grid.Column="1" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Supplier:" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Margin="0,0,20,10" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right"/>
+                <TextBlock Text="{Binding Supplier}" FontWeight="DemiBold" FontSize="22" VerticalAlignment="Center" Grid.Row="5" Margin="0,0,20,10" Grid.Column="1" HorizontalAlignment="Left"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

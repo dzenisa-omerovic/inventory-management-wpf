@@ -26,7 +26,6 @@ namespace InventoryManagement.WPF.ViewModels
                 new ViewModelTab { DisplayName = "Person suppliers", Content = new PersonSupplierViewModel() },
                 new ViewModelTab { DisplayName = "Company suppliers", Content = new CompanySupplierViewModel() },
                 new ViewModelTab { DisplayName = "Warehouse products", Content = new WarehouseProductViewModel() },
-                new ViewModelTab { DisplayName = "Order items", Content = new OrderItemViewModel() },
                 new ViewModelTab { DisplayName = "Orders", Content = new OrderViewModel() }
             };
         }
