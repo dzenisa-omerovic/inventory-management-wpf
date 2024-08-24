@@ -1,0 +1,56 @@
+﻿<Window x:Class="InventoryManagement.WPF.Views.ReportOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
+        mc:Ignorable="d"
+        Title="Report Order Window" Height="450" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical" Margin="5">
+            
+            <TextBlock Text="Order Report" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <TextBlock Text="Name:" FontWeight="Bold" Width="120" FontSize="16"/>
+                <TextBlock Text="{Binding Name}" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <TextBlock Text="Order date:" FontWeight="Bold" Width="120" FontSize="16"/>
+                <TextBlock Text="{Binding OrderDate}" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <TextBlock Text="Supplier:" FontWeight="Bold" Width="120" FontSize="16"/>
+                <TextBlock Text="{Binding Supplier}" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <TextBlock Text="Status:" FontWeight="Bold" Width="120" FontSize="16"/>
+                <TextBlock Text="{Binding Status}" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Total price:" FontWeight="Bold" Width="120" FontSize="16"/>
+                <TextBlock Text="{Binding TotalPrice, StringFormat={}{0:C}}" FontSize="16"/>
+            </StackPanel>
+
+            <TextBlock Text="Order items" FontSize="18" FontWeight="Bold" Margin="0,0,0,5"/>
+            <ListView ItemsSource="{Binding OrderItems}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Product" DisplayMemberBinding="{Binding Product.Name}" Width="200"/>
+                        <GridViewColumn Header="Quantity" DisplayMemberBinding="{Binding Quantity}" Width="100"/>
+                        <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Product.Price}" Width="100"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>

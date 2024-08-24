@@ -1,4 +1,4 @@
-﻿using InventoryManagement.WPF.Commands;
+﻿using InventoryManagement.Domain.Models;
 using InventoryManagement.WPF.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -17,13 +17,14 @@ using System.Windows.Shapes;
 namespace InventoryManagement.WPF.Views
 {
     /// <summary>
-    /// Interaction logic for AddOrderWindow.xaml
+    /// Interaction logic for ReportWarehouseProductWindow.xaml
     /// </summary>
-    public partial class AddOrderWindow : Window
+    public partial class ReportWarehouseProductWindow : Window
     {
-        public AddOrderWindow()
+        public ReportWarehouseProductWindow(WarehouseProduct warehouseProduct)
         {
             InitializeComponent();
+            DataContext = new ReportWarehouseProductViewModel(warehouseProduct);
         }
     }
 }

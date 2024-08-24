@@ -26,7 +26,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Generate Report" Command="{Binding GenerateReportCommand}" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Grid.Row="2" Width="120" Padding="5"/>
+        <Button Content="Generate report" Command="{Binding GenerateReportCommand}" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Grid.Row="2" Width="120" Padding="5"/>
     </Grid>
 </UserControl>
 

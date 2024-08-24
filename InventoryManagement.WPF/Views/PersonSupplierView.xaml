@@ -43,8 +43,8 @@
         <ListView ItemsSource="{Binding PersonSuppliers}" SelectedItem="{Binding SelectedPersonSupplier}" Grid.Row="5" Grid.ColumnSpan="2" Margin="5">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" Width="150"/>
-                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" Width="150"/>
+                    <GridViewColumn Header="First name" DisplayMemberBinding="{Binding FirstName}" Width="150"/>
+                    <GridViewColumn Header="Last name" DisplayMemberBinding="{Binding LastName}" Width="150"/>
                     <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}" Width="200"/>
                 </GridView>
             </ListView.View>

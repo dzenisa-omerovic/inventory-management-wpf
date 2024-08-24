@@ -9,42 +9,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InventoryManagement.WPF.ViewModels
 {
     public class AddOrderViewModel : ViewModelBase
     {
         private readonly InventoryManagementDbContext _context;
-
+        private readonly System.Windows.Window _window;
         private string _orderName;
         private Supplier _selectedSupplier;
         private Product _selectedProduct;
         private int _quantity;
+        private OrderItem _selectedOrderItem;
+        public event Action OnOrderSaved;
 
         public ICommand AddOrderItemCommand { get; }
         public ICommand SaveOrderCommand { get; }
+        public ICommand RemoveOrderItemCommand { get; }
 
         public ObservableCollection<Supplier> Suppliers { get; set; }
         public ObservableCollection<Product> Products { get; set; }
         public ObservableCollection<OrderItem> OrderItems { get; set; }
-
-        public event Action OnOrderSaved;
-        private OrderItem _selectedOrderItem;
-
-        public ICommand RemoveOrderItemCommand { get; }
-
-        public OrderItem SelectedOrderItem
-        {
-            get => _selectedOrderItem;
-            set
-            {
-                _selectedOrderItem = value;
-                OnPropertyChanged(nameof(SelectedOrderItem));
-            }
-        }
-        public AddOrderViewModel()
+        public AddOrderViewModel(System.Windows.Window window)
         {
             _context = new InventoryManagementDbContext();
+            _window = window;
             Suppliers = new ObservableCollection<Supplier>();
             Products = new ObservableCollection<Product>();
             OrderItems = new ObservableCollection<OrderItem>();
@@ -56,7 +46,15 @@ namespace InventoryManagement.WPF.ViewModels
             SaveOrderCommand = new RelayCommand(async () => await SaveOrderAsync());
             RemoveOrderItemCommand = new RelayCommand(RemoveOrderItem);
         }
-
+        public OrderItem SelectedOrderItem
+        {
+            get => _selectedOrderItem;
+            set
+            {
+                _selectedOrderItem = value;
+                OnPropertyChanged(nameof(SelectedOrderItem));
+            }
+        }
         public string OrderName
         {
             get => _orderName;
@@ -150,14 +148,18 @@ namespace InventoryManagement.WPF.ViewModels
             }
         }
 
-        private async Task SaveOrderAsync()
+        public async Task SaveOrderAsync()
         {
             if (string.IsNullOrEmpty(OrderName) || SelectedSupplier == null || !OrderItems.Any())
             {
                 MessageBox.Show("Please ensure all fields are filled correctly and that at least one order item is added.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-
+            if (_context.Orders.Any(o => o.Name == OrderName))
+            {
+                MessageBox.Show("An order with the same name already exists.", "Duplicate Product", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             var newOrder = new Order
             {
                 Name = OrderName,
@@ -177,6 +179,8 @@ namespace InventoryManagement.WPF.ViewModels
             OrderName = string.Empty;
             SelectedSupplier = null;
             OrderItems.Clear();
+
+            _window?.Close();
         }
         
     }

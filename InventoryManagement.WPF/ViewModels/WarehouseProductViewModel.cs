@@ -18,9 +18,8 @@ namespace InventoryManagement.WPF.ViewModels
         private readonly InventoryManagementDbContext _context;
 
         private ObservableCollection<WarehouseProduct> _warehouseProducts { get; set; }
-
-        public ICommand GenerateReportCommand { get; }
         private WarehouseProduct _selectedWarehouseProduct;
+        public ICommand GenerateReportCommand { get; }
         public WarehouseProductViewModel()
         {
             _context = new InventoryManagementDbContext();
@@ -51,8 +50,8 @@ namespace InventoryManagement.WPF.ViewModels
                 return;
             }
 
-            var reportWindow = new ReportWindow(SelectedWarehouseProduct);
-            reportWindow.Show();
+            var reportWarehouseProductWindow = new ReportWarehouseProductWindow(SelectedWarehouseProduct);
+            reportWarehouseProductWindow.Show();
         }
         
     }

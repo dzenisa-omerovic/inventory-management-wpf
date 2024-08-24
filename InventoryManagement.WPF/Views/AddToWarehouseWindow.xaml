@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
         mc:Ignorable="d"
-        Title="AddToWarehouseWindow" Height="450" Width="800">
+        Title="Add To Warehouse Window" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -35,6 +35,6 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-        <Button Content="Add to Warehouse" Command="{Binding AddToWarehouseCommand}" Grid.Row="2" Grid.Column="1" Margin="5" Padding="5" HorizontalAlignment="Right" Width="150"/>
+        <Button Content="Add to warehouse" Command="{Binding AddToWarehouseCommand}" Grid.Row="2" Grid.Column="1" Margin="5" Padding="5" HorizontalAlignment="Right" Width="150"/>
     </Grid>
 </Window>

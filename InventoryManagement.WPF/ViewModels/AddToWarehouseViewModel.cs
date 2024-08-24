@@ -17,16 +17,19 @@ namespace InventoryManagement.WPF.ViewModels
     public class AddToWarehouseViewModel : ViewModelBase
     {
         private readonly InventoryManagementDbContext _context;
+        private readonly System.Windows.Window _window;
         private Order _selectedOrder; 
         public event Action OnOrderAdded;
         public ICommand AddToWarehouseCommand { get; }
         public ObservableCollection<WarehouseLocation> WarehouseLocations { get; set; }
         private WarehouseLocation _selectedWarehouseLocation;
         
-        public AddToWarehouseViewModel(Order selectedOrder, InventoryManagementDbContext context)
+        public AddToWarehouseViewModel(Order selectedOrder, InventoryManagementDbContext context, System.Windows.Window window)
         {
             _context = context;
+            _window = window;
             _selectedOrder = selectedOrder;
+
             WarehouseLocations = new ObservableCollection<WarehouseLocation>(_context.WarehouseLocations.Include(wl => wl.Warehouse).ToList());
             AddToWarehouseCommand = new RelayCommand(AddToWarehouse);
         }
@@ -81,13 +84,14 @@ namespace InventoryManagement.WPF.ViewModels
                 };
 
                 _context.WarehouseProducts.Add(warehouseProduct);
+                _selectedOrder.Status = "Added to warehouse";
+                _context.SaveChanges();
+                MessageBox.Show("Order added to warehouse and status updated.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 
-            _selectedOrder.Status = "Added to warehouse";
-            _context.SaveChanges();
-            MessageBox.Show("Order added to warehouse and status updated.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             OnOrderAdded?.Invoke();
-            
+            _window?.Close();
+
         }
     }
 }

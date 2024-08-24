@@ -63,7 +63,7 @@ namespace InventoryManagement.EntityFramework.Database
 
             modelBuilder.Entity<OrderItem>()
                 .HasOne(oi => oi.Order)
-                .WithMany(o => o.OrderItems)
+                .WithMany(oi => oi.OrderItems)
                 .HasForeignKey(oi => oi.OrderId)
                 .OnDelete(DeleteBehavior.Cascade);
 

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
         mc:Ignorable="d"
-        Title="AddOrderWindow" Height="450" Width="800">
+        Title="Add Order Window" Height="450" Width="800">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -15,26 +15,29 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Name:" VerticalAlignment="Center" Margin="5" Grid.Column="0"/>
-        <TextBox Text="{Binding OrderName}" Grid.Row="0" Margin="5" Grid.Column="1"/>
+        <TextBlock Grid.Row="0" Text="Add order" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" FontWeight="Bold" FontSize="18" Grid.ColumnSpan="2"/>
+        
+        <TextBlock Grid.Row="1" Text="Name:" VerticalAlignment="Center" Margin="5" Grid.Column="0"/>
+        <TextBox Text="{Binding OrderName}" Grid.Row="1" Margin="5" Grid.Column="1"/>
 
-        <TextBlock Text="Supplier:" VerticalAlignment="Center" Grid.Row="1" Margin="5" Grid.Column="0"/>
-        <ComboBox Padding="5" ItemsSource="{Binding Suppliers}" Grid.Column="1" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="DisplayName" Grid.Row="1" Margin="5"/>
+        <TextBlock Text="Supplier:" VerticalAlignment="Center" Grid.Row="2" Margin="5" Grid.Column="0"/>
+        <ComboBox Padding="5" ItemsSource="{Binding Suppliers}" Grid.Column="1" SelectedItem="{Binding SelectedSupplier}" DisplayMemberPath="DisplayName" Grid.Row="2" Margin="5"/>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="5" >
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="3" Margin="5">
             <TextBlock Text="Product:" VerticalAlignment="Center" Margin="5"/>
             <ComboBox Padding="5" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" DisplayMemberPath="Name" Width="100" Margin="5"/>
             <TextBlock Text="Quantity:" VerticalAlignment="Center" Margin="5"/>
             <TextBox Text="{Binding Quantity}" Width="50" Margin="5"/>
         </StackPanel>
 
-        <Button Padding="5" Content="Add Item" Command="{Binding AddOrderItemCommand}" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Width="100" Margin="5"/>
-        <Button Padding="5" Content="Remove Item" Command="{Binding RemoveOrderItemCommand}" Width="100" Margin="5" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="2"/>
-        <ListView ItemsSource="{Binding OrderItems}" SelectedItem="{Binding SelectedOrderItem}" Grid.Row="3" Margin="5" Grid.ColumnSpan="2">
+        <Button Padding="5" Content="Add item" Command="{Binding AddOrderItemCommand}" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Width="100" Margin="5"/>
+        <Button Padding="5" Content="Remove item" Command="{Binding RemoveOrderItemCommand}" Width="100" Margin="5" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="2"/>
+        <ListView ItemsSource="{Binding OrderItems}" SelectedItem="{Binding SelectedOrderItem}" Grid.Row="4" Margin="5" Grid.ColumnSpan="3">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Product" DisplayMemberBinding="{Binding Product.Name}" Width="200"/>
@@ -43,6 +46,6 @@
             </ListView.View>
         </ListView>
 
-        <Button Content="Save" Padding="5" Grid.Column="1" Command="{Binding SaveOrderCommand}" Width="100" HorizontalAlignment="Right" Grid.Row="4" Margin="5"/>
+        <Button Content="Save" Padding="5" Grid.Column="1" Command="{Binding SaveOrderCommand}" Width="100" HorizontalAlignment="Right" Grid.Row="5" Margin="5"/>
     </Grid>
 </Window>
