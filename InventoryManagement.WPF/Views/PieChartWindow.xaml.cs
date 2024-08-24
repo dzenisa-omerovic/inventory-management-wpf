@@ -40,10 +40,11 @@ namespace InventoryManagement.WPF.Views
                 return;
             }
 
-            var statusCounts = orders.GroupBy(o => o.Status).Select(g => new 
-            { 
-                Status = g.Key, Count = g.Count()
-            }).ToList();
+            var statusCounts = orders.GroupBy(o => o.Status)
+                .Select(g => new 
+                {
+                    Status = g.Key, Count = g.Count()
+                }).ToList();
 
             var pieSeries = new PieSeries
             {
@@ -51,7 +52,7 @@ namespace InventoryManagement.WPF.Views
                 AngleSpan = 360,
                 StartAngle = 0,
                 InsideLabelPosition = 0.8,
-                OutsideLabelFormat = "{0}: {1} ({2:P})",
+                OutsideLabelFormat = "{0} ({2:0}%)",
                 TextColor = OxyColors.Black
             };
 

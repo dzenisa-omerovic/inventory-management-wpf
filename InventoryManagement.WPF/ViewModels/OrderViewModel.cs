@@ -233,12 +233,12 @@ namespace InventoryManagement.WPF.ViewModels
 
             if (StartDate.HasValue)
             {
-                orders = orders.Where(o => o.Date >= StartDate.Value);
+                orders = orders.Where(o => o.Date.Date >= StartDate.Value.Date);
             }
 
             if (EndDate.HasValue)
             {
-                orders = orders.Where(o => o.Date <= EndDate.Value);
+                orders = orders.Where(o => o.Date.Date <= EndDate.Value.Date);
             }
 
             Orders.Clear();
