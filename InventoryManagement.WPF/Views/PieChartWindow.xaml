@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:InventoryManagement.WPF.Views"
         xmlns:oxy="http://oxyplot.org/wpf"
         mc:Ignorable="d"
-        Title="Pie Chart Status Window" Height="500" Width="700">
+        Title="Pie Chart Status Window" Height="720" Width="800">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

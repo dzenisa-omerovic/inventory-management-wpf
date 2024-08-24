@@ -72,7 +72,7 @@ namespace InventoryManagement.WPF.ViewModels
                 if (existingWarehouseProduct != null)
                 {
                     MessageBox.Show($"Product {orderItem.Product.Name} already exists in the selected warehouse.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                    continue;
+                    return;
                 }
 
                 var warehouseProduct = new WarehouseProduct
@@ -84,11 +84,12 @@ namespace InventoryManagement.WPF.ViewModels
                 };
 
                 _context.WarehouseProducts.Add(warehouseProduct);
-                _selectedOrder.Status = "Added to warehouse";
-                _context.SaveChanges();
-                MessageBox.Show("Order added to warehouse and status updated.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+             
             }
 
+            _selectedOrder.Status = "Added to warehouse";
+            _context.SaveChanges();
+            MessageBox.Show("Order added to warehouse and status updated.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             OnOrderAdded?.Invoke();
             _window?.Close();
 
