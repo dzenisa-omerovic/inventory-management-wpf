@@ -132,6 +132,15 @@ namespace InventoryManagement.WPF.ViewModels
                 return;
             }
 
+            bool isSupplierInOrderItems = await _context.Orders.AnyAsync(o => o.SupplierId == SelectedCompanySupplier.Id);
+            bool isSupplierInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.SupplierId == SelectedCompanySupplier.Id);
+
+            if (isSupplierInOrderItems || isSupplierInWarehouse)
+            {
+                MessageBox.Show("You can update only suppliers which are not added to the order or warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             if (MessageBox.Show("Are you sure that you want to update this supplier?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
             {
                 return;
@@ -166,6 +175,15 @@ namespace InventoryManagement.WPF.ViewModels
         {
             if (SelectedCompanySupplier == null)
             {
+                return;
+            }
+
+            bool isSupplierInOrderItems = await _context.Orders.AnyAsync(o => o.SupplierId == SelectedCompanySupplier.Id);
+            bool isSupplierInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.SupplierId == SelectedCompanySupplier.Id);
+
+            if (isSupplierInOrderItems || isSupplierInWarehouse)
+            {
+                MessageBox.Show("You can delete only suppliers which are not added to the order or warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 

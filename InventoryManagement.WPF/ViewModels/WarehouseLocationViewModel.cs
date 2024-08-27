@@ -155,6 +155,14 @@ namespace InventoryManagement.WPF.ViewModels
                 return;
             }
 
+            bool isWarehouseLocationInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.WarehouseLocationId == SelectedWarehouseLocation.Id);
+
+            if (isWarehouseLocationInWarehouse)
+            {
+                MessageBox.Show("You can update only warehouse locations which are not added to warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             if (MessageBox.Show("Are you sure that you want to update this warehouse location?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
             {
                 return;
@@ -189,6 +197,14 @@ namespace InventoryManagement.WPF.ViewModels
         {
             if (SelectedWarehouseLocation == null)
             {
+                return;
+            }
+
+            bool isWarehouseLocationInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.WarehouseLocationId == SelectedWarehouseLocation.Id);
+
+            if (isWarehouseLocationInWarehouse)
+            {
+                MessageBox.Show("You can delete only warehouse locations which are not added to warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 

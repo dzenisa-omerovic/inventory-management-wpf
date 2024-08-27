@@ -155,6 +155,15 @@ namespace InventoryManagement.WPF.ViewModels
                 return;
             }
 
+            bool isProductInOrderItems = await _context.OrderItems.AnyAsync(oi => oi.ProductId == SelectedProduct.Id);
+            bool isProductInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.ProductId == SelectedProduct.Id);
+
+            if (isProductInOrderItems || isProductInWarehouse)
+            {
+                MessageBox.Show("You can update only products which are not added to the order or warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             if (MessageBox.Show("Are you sure that you want to update this product?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
             {
                 return;
@@ -184,11 +193,19 @@ namespace InventoryManagement.WPF.ViewModels
         {
             return SelectedProduct != null;
         }
-
         private async void DeleteProduct()
         {
             if (SelectedProduct == null)
             {
+                return;
+            }
+
+            bool isProductInOrderItems = await _context.OrderItems.AnyAsync(oi => oi.ProductId == SelectedProduct.Id);
+            bool isProductInWarehouse = await _context.WarehouseProducts.AnyAsync(wp => wp.ProductId == SelectedProduct.Id);
+
+            if (isProductInOrderItems || isProductInWarehouse)
+            {
+                MessageBox.Show("You can delete only products which are not added to the order or warehouse.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -205,6 +222,8 @@ namespace InventoryManagement.WPF.ViewModels
             ProductPrice = 0;
             MessageBox.Show("Product deleted successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+
 
         private void TryDeleteProduct()
         {
