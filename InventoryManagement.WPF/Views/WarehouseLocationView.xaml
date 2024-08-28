@@ -22,7 +22,7 @@
         <TextBlock Text="Add new warehouse location" FontWeight="SemiBold" FontSize="16" Padding="10" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <TextBlock Text="Name:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
-        <TextBox Text="{Binding WarehouseLocationName}" x:Name="txtWarehouseLocationName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+        <TextBox Text="{Binding WarehouseLocationName}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
 
         <TextBlock Text="Warehouse:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
         <ComboBox Padding="5" ItemsSource="{Binding Warehouses}" SelectedItem="{Binding SelectedWarehouse}" DisplayMemberPath="Name" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>

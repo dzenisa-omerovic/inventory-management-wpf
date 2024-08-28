@@ -22,13 +22,13 @@
         <TextBlock Text="Add new person" FontWeight="SemiBold" FontSize="16" Padding="10" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <TextBlock Text="First name:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
-        <TextBox Text="{Binding FirstName}" x:Name="txtFirstName" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <TextBox Text="{Binding FirstName}" Grid.Row="1" Grid.Column="1" Margin="5"/>
         
         <TextBlock Text="Last name:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
-        <TextBox Text="{Binding LastName}" x:Name="txtLastName" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <TextBox Text="{Binding LastName}" Grid.Row="2" Grid.Column="1" Margin="5"/>
 
         <TextBlock Text="Address:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="7,5"/>
-        <TextBox Text="{Binding Address}" x:Name="txtAddress" Grid.Row="3" Grid.Column="1" Margin="5"/>
+        <TextBox Text="{Binding Address}" Grid.Row="3" Grid.Column="1" Margin="5"/>
 
         <Grid Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="10">
             <Grid.ColumnDefinitions>
