@@ -7,7 +7,7 @@
   - Entity Framework 8.0
   - Sql Server 16.0
 # Access
-  The application is accessible using git bash with this command:\
+  The application is accessible using git bash with this command:
   ```
   git clone https://github.com/dzenisa-omerovic/inventory-management-wpf.git
   ```
